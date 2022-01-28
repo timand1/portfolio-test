@@ -240,8 +240,6 @@ button {
     padding: 0 1rem;
     /* background:#aec2b8; */
     background: rgb(233, 223, 212);
-    box-shadow: 4px 4px 2px rgb(51, 48, 44),
-                -4px 4px 2px rgb(51, 48, 44);
     display: grid;
     row-gap: 4rem;
 }
@@ -780,8 +778,13 @@ footer {
         font-size: 1.5rem;
     }
 
-    .test {
+    .container-overflow {
         overflow: hidden;
+    }
+
+    .wrapper {
+        box-shadow: 4px 4px 2px rgb(51, 48, 44),
+        -4px 4px 2px rgb(51, 48, 44);
     }
 
     .container {
