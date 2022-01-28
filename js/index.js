@@ -128,7 +128,6 @@ scrollRightButton.addEventListener('mouseup', () => {
 const cardsElem = document.querySelectorAll('.card');
 for(let i = 0; i < cardsElem.length; i++) {
     cardsElem[i].addEventListener('click', () => {
-        console.log('hejo')
         cardsElem[i].classList.toggle('flip');
     })
 }
