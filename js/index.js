@@ -75,6 +75,7 @@ upButton.addEventListener('click', () => {
 const expButtons = document.querySelectorAll('.exp-btn');
 const marioPipes = document.querySelectorAll('.mario-pipes');
 const hiddenMario = document.querySelector('.mario-pipe--hidden');
+
 for(let i = 0; i < expButtons.length; i++) {
     expButtons[i].addEventListener('click', () =>{
         
@@ -88,7 +89,7 @@ for(let i = 0; i < expButtons.length; i++) {
             marioPipes[i].classList.add('animFigma');
         } else if(i == 4) {            
             marioPipes[i].classList.add('animMeme');
-            hiddenMario.classList.add('animMeme')
+            hiddenMario.classList.add('animMeme');
         }
     })
 };

@@ -315,8 +315,7 @@ button {
     width: 30px;
     height: 0px;
     background: linear-gradient(to right, rgb(10, 138, 37) , rgb(110, 226, 110));
-    box-shadow: 5px 2px 4px rgba(104, 84, 34, 0.25); 
-     
+    box-shadow: 5px 2px 4px rgba(104, 84, 34, 0.25);      
 }
 
 .mario-pipes::before {
@@ -346,15 +345,22 @@ button {
     background-size: contain;
 }
 
+
 .exp-btn {
     color:rgba(0, 0, 0, 0.3);
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 700;
     min-width: 60px;
     border: none;
     padding: 0;
-    margin: 0;
+    margin-top: 1rem;
     background: transparent;
+}
+
+.mario--btn .exp-btn:last-child {
+    align-self: flex-start;
+    font-size: 1rem;
+   
 }
 
 .animHTML {
@@ -826,12 +832,12 @@ footer {
     .contact-btn:active {
         background: none;
     }   
-    
+
+       
     .exp-btn {
-        background:rgba(47, 79, 79, 0.4);
+        /* background:rgba(47, 79, 79, 0.4); */        
         border-radius: 4px;
-        padding: 0.2rem 0.4rem;
-        margin-top: 1rem;
+        padding: 0.2rem 0.4rem;        
         transition: all 300ms;
     }
 
