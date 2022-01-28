@@ -137,6 +137,10 @@ header {
     z-index: -2;
 }
 
+video::-webkit-media-controls {
+    display: none;
+  }
+
 header::after {
     content: "";
     position: absolute;
@@ -554,11 +558,20 @@ button {
     align-items: center;
     transition: transform 1s;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 1s;
+    -o-transform-style: preserve-3d;
+    -o-transition: -o-transform 1s;
+    -moz-transform-style: preserve-3d;
+    -moz-transition: -moz-transform 1s;
 }
 
 .back, .front {
     position: absolute;
     backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
     cursor: pointer;
 }
 
