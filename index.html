@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>   
+    <button class="up-btn"><i class="material-icons">expand_less</i></button>
+
+    <header>
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav class="nav">
+            <!-- <div class="header-nav"> -->
+                <figure class="logo"></figure>
+                <ul class="link-container">
+                    <li class="link-item"><a href="#about" class="link">About</a></li>
+                    <li class="link-item"><a href="#knowledge" class="link">Knowledge</a></li>
+                    <li class="link-item"><a href="#experience" class="link">Experience</a></li>
+                    <li class="link-item"><a href="#portfolio" class="link">Portfolio</a></li>
+                    <li class="link-item"><a href="#contact" class="link">Contact</a></li>
+                </ul>
+            <!-- </div> -->
+        </nav>
+        <video class="video-container" muted autoplay loop >
+            <source src="/assets/main-video.mp4" type="video/mp4"/>
+        </video>
+        <article class="header-info">
+            <h1>Tim Andersson</h1>
+            <h2>Frontend Developer in progress</h2>  
+            <button class="contact-btn">Contact me</button>
+        </article>
+        <button class="switch-btn">
+            <span>play</span><span>pause</span>
+            <span class="switch"></span>
+        </button>
+    </header>
+    <main class="wrapper">
+        <section id="about">
+            <h1 class="headline"><span class="headline headline--color">About</span> me</h1>
+            <h3>Hello! My name is Tim</h3>
+            <p>I am 31 years old and live in Karlstad with my girlfriend and 5 month old daughter. Sadly born in Säffle, but I think I managed quite decently anyway!</p>
+            <p>Currently I am stuidying to become a fronend developer and Karlstads Folkuniverstet and during the few hours of free time I have, I enjoy spending time with my family and play games!</p>
+        </section>
+        <section id="knowledge">
+            <h1 class="headline">My <span class="headline headline--color">knowledge</span></h1>
+            <article class="mario mario--pipes">
+                <figure class="mario-cloud"></figure>
+                <div class="mario-pipes"></div>
+                <div class="mario-pipes"></div>
+                <div class="mario-pipes"></div>
+                <div class="mario-pipes"></div>
+                <div class="mario-pipes"></div>
+                <div class="mario-pipe--hidden"></div>
+            </article>            
+            <article class="mario mario--btn">
+                <button class="exp-btn btn--html">HTML</button>
+                <button class="exp-btn btn--css">CSS</button>
+                <button class="exp-btn btn--js">JS</button>
+                <button class="exp-btn btn--figma">Figma</button>
+                <button class="exp-btn btn--meme">Meme</button>
+            </article>
+        </section>
+        <section id="experience">
+            <h1 class="headline">My <span class="headline headline--color">experience</span></h1>
+                
+            
+            <div class="timeline-container">
+                <article class="timeline">
+                    <div class="timeline--pins">
+                        <div class="pin"><p>Born</p></div>
+                        <div class="pin"><p>Can't remember</p></div>
+                        <div class="pin"><p>Pro gamer</p></div>
+                        <div class="pin"><p>Graduate High School</p><p>Electrician</p></div>
+                        <div class="pin"><p>Metal Sheet Worker Programme</p><p>Worked as a MSW</p></div>
+                        <div class="pin"><p>Started University Pharmacist Programme</p></div>
+                        <div class="pin"><p>Graduated University</p><p>Worked as a pharmacist</p></div>
+                        <div class="pin"><p>Quit as a pharmacist</p><p>Started Frontend Developer education</p></div>
+                    </div>
+                    <div class="timeline--year"></div>
+                </article>
+            </div>
+            <div class="timeline--buttons">
+                <span class="material-icons scroll scroll--left">navigate_before</span>
+                <span class="material-icons scroll scroll--right">navigate_next</span>
+            </div>                 
+        </section>
+
+        <section id="portfolio">
+            <h1 class="headline">My <span class="headline headline--color">portfolio</span></h1>
+            <div class="test">
+                <article class="container">
+                    <article class="card">
+                        <span class="front">
+                            <figure></figure>
+                            <div class="card--text">
+                                <h3>Nothing</h3>
+                                <p>Completely useless</p>
+                            </div>
+                        </span>
+                        <span class="back">👽</span>
+                    </article>
+                    <article class="card">
+                        <span class="front">
+                            <figure></figure>
+                            <div class="card--text">
+                                <h3>Hey!</h3>
+                                <p>Im still in school</p>
+                            </div>
+                        </span>
+                        <span class="back">🙌</span>
+                    </article>
+                    <article class="card">
+                        <span class="front">
+                            <figure></figure>
+                            <div class="card--text">
+                                <h3>Bruh</h3>
+                                <p>Please...</p>
+                            </div>
+                        </span>
+                        <span class="back">😬</span>
+                    </article>
+                    <article class="card">
+                        <span class="front">
+                            <figure></figure>
+                            <div class="card--text">
+                                <h3>...</h3>
+                                <p></p>
+                            </div>
+                        </span>
+                        <span class="back">😂</span>
+                    </article>
+                </article>
+            </div>       
+        </section>
+        <section id="contact">
+            <h1 class="headline"><span class="headline headline--color">Contact</span> me</h1>
+            <h3>Send a message if you have questions or just want to show me a meme!</h3>
+            <form class="form" method="post" enctype="text/plain" >
+                <article class="form--name">
+                    <input type="text" name="name" class="form__input" id="name" required>
+                    <label class="form__label form__label--name" for="name">Name</label>
+                </article> 
+                <article class="form--subject">
+                    <input type="subject" name="subject" class="form__input" id="subject" required>
+                    <label class="form__label form__label--subject" for="subject">Subject</label>
+                </article>            
+                <article class="form--msg">
+                    <textarea name="message" class="form__input form__input--msg" id="message" for="msg" cols="30" rows="10" required></textarea >
+                    <label class="form__label form__label--msg" for="msg">Message</label>
+                </article>
+                <input type="button" class="btn btn--form" value="Send Message">
+
+            </form>
+        </section> 
+        <footer>
+            <p class="footer__text">Tim andersson <span id="date"></span></p>
+        </footer>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
