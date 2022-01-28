@@ -661,6 +661,10 @@ button {
     padding: 0.5rem 1.5rem;
 }
 
+textarea {
+    resize: none;
+}
+
 /* footer */
 footer {
     margin: 1rem 0 0,5rem 0;
