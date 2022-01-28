@@ -46,7 +46,7 @@ header {
 
 .logo {
     display: none;
-    background-image: url("/assets/logo.png");
+    background-image: url("../assets/logo.png");
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0.8rem 0;
@@ -276,7 +276,7 @@ button {
     height: 70px;
     top: 0;
     left: 0;
-    background-image: url('/assets/cloud.png');
+    background-image: url('../assets/cloud.png');
     background-repeat: no-repeat;
     background-size: contain;
     animation: backAndForth 8s infinite ease-in-out;
@@ -339,7 +339,7 @@ button {
     left: -20px;
     width: 60px;
     height: 60px;
-    background-image: url('/assets/mario.png');
+    background-image: url('../assets/mario.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -578,7 +578,7 @@ button {
 .card figure {
     min-height: 180px;
     min-width: 200px;    
-    background-image: url("/assets/harold.jpg");
+    background-image: url("../assets/harold.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -589,15 +589,15 @@ button {
 }
 
 .card:nth-child(2) figure {
-    background-image: url("/assets/ada.jpg");
+    background-image: url("../assets/ada.jpg");
 }
 
 .card:nth-child(3) figure {
-    background-image: url("/assets/soon.jpg");
+    background-image: url("../assets/soon.jpg");
 }
 
 .card:nth-child(4) figure {
-    background-image: url("/assets/harold-header.jpg");
+    background-image: url("../assets/harold-header.jpg");
 }
 
 .card--text {

@@ -14,6 +14,13 @@ videoButton.addEventListener('click', () => {
     }
 });
 
+const contactButton = document.querySelector('.contact-btn');
+const contactElem = document.querySelector('#contact');
+contactButton.addEventListener('click', () => {
+    contactElem.scrollIntoView();
+});
+
+
 // Menu mobile, open close
 const menuButton = document.querySelector('.menu-btn');
 const menu = document.querySelector('.nav');
