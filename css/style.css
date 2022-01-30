@@ -163,12 +163,147 @@ header h1, h2 {
 
 header h1 {
     font-size: 2rem;
-    border: 6px solid #fff;
+    /* border: 6px solid #fff; */
     padding: 1.5rem;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;    
+    /* border-top-right-radius: 20px;
+    border-top-left-radius: 20px;   */
+    border-radius: 5px;
+    background: rgb(8, 14, 14);
+    position: relative;
+    /* box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;   */
 }
 
+header h1::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 0 17px 3px #0ff,
+                0 0 4px 2px #0ff;
+    animation: half-cyan-shadow 4s infinite ease;
+    z-index: -1;
+}
+
+header h1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 0 17px 3px #ff0101,
+                0 0 4px 2px #ff0901;  
+    animation: half-yellow-shadow 4s ease infinite;
+    z-index: -1;
+}
+
+@keyframes red-shadow {
+    0% { top: 0; left: 0; }
+    25% { top: 50%;  left: 0; }
+    50% { top: 50%; left: 50%;  }
+    75% { top: 0; left: 50%; }
+    100% { top: 0; left: 0; }
+  }
+  
+@keyframes cyan-shadow {
+    0% { right: 0; bottom: 0;  } 
+    25% { right: 0; bottom: 50%;  }
+    50% { right: 50%; bottom: 50%; }
+    75% { right: 50%; bottom: 0; }
+    100% { right: 0; bottom: 0; }
+  }
+
+  @keyframes half-yellow-shadow {
+    0% {
+      top: 0;
+      left: 0;
+      height: 50%;
+      width: 50%;
+    }
+    16.66% {
+      top: 0;
+      left: 0;
+      height: 50%;
+      width: 100%;
+    }
+    32.32% {
+      top: 0;
+      left: 50%;
+      height: 50%;
+      width: 50%;
+    }
+    49.98% {
+      top: 50%;
+      left: 50%;
+      height: 50%;
+      width: 50%;
+    }
+    66.64% {
+      top: 50%;
+      left: 0;
+      height: 50%;
+      width: 100%;
+    }
+    83.3% {
+      top: 50%;
+      left: 0;
+      height: 50%;
+      width: 50%;
+    }
+    100% {
+      top: 0;
+      left: 0;
+      height: 50%;
+      width: 50%;
+    }
+  }
+  
+  @keyframes half-cyan-shadow {
+    0% {
+      bottom: 0;
+      right: 0;
+      height: 50%;
+      width: 50%;
+    }
+    16.66% {
+      bottom: 0;
+      right: 0;
+      height: 50%;
+      width: 100%;
+    }
+    32.32% {
+      bottom: 0;
+      right: 50%;
+      height: 50%;
+      width: 50%;
+    }
+    49.98% {
+      bottom: 50%;
+      right: 50%;
+      height: 50%;
+      width: 50%;
+    }
+    66.64% {
+      bottom: 50%;
+      right: 0;
+      height: 50%;
+      width: 100%;
+    }
+    83.3% {
+      bottom: 50%;
+      right: 0;
+      height: 50%;
+      width: 50%;
+    }
+    100% {
+      bottom: 0;
+      right: 0;
+      height: 50%;
+      width: 50%;
+    }
+  }
 
 header h2 {
     width: 100%;
@@ -775,7 +910,7 @@ footer {
 
     header h1 {
         font-size: 3rem;
-        border: 6px solid #fff;
+        /* border: 6px solid #fff; */
         padding: 1.5rem;
     }
     

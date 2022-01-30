@@ -125,6 +125,10 @@ scrollRightButton.addEventListener('mouseup', () => {
     clearInterval(intervalRight);    
 })
 
+// Slide portfolio TBD
+const cardsElems = document.querySelectorAll(".container");
+
+
 // Flip cards
 const cardsElem = document.querySelectorAll('.card');
 for(let i = 0; i < cardsElem.length; i++) {
